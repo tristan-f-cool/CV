@@ -8,14 +8,47 @@
 		body {background-color:gainsboro}
 		h1 {color:red}
 		p {color:blue}
+		table, th, td {border: 1px solid black;font-family: Arial, sans-serif;}
 	</style>
 </head>
 
 <body>
-	<!-- Page links -->
-	<a href="./TristanCool_CV.html">CV</a>
+	<!-- Page links - menu table -->
+	<table border="1">
+		<thead>
+			<tr>
+				<th scope="row">&nbsp <a href="./TristanCool_CV.html">CV</a>&nbsp</th>
+				<th scope="row">&nbsp <a href="https://www.linkedin.com/in/tristan-cool/" target="_blank">LinkedIn</a>&nbsp</th>
+				<th scope="row">&nbsp <a href="https://github.com/tristan-f-cool" target="_blank">GITHUB</a>&nbsp</th>
+			</tr>
+		</thead>
+	</table>
+
 	
 	<!-- COVER LETTER -->
 		<h1> TRISTAN COOL </h1>
+				
+		<!-- Contact information -->
+		<div id="contact">
+			<span> <strong>Email: </strong> <em> tristan.f.cool@gmail.com </em> <br>
+			<span> <strong>Mobile(UK): </strong> <em> (+44)7501120822 </em> <br>
+			<span> <strong>Mobile(CAN):</strong> <em> (+1)5145317456 </em> <br>
+			<span> <strong>Skype:</strong> <em> tristan_cool_64@hotmail.com </em> <br>
+			<span> <strong>Address:</strong> 2 Caldervale Rd, Clapham, London, UK, SW4 9LZ <br>
+			<br>
+		</div>
+		
+		<!-- Date -->
+		<div id="date">
+			<h2><span id="datetime"></span></h2><br>
+			<script>
+				var dt = new Date();
+				document.getElementById("datetime").innerHTML = dt.toLocaleDateString();
+			</script>
+		</div>
+		
+		<div id="coverletter">
 			<p>Cover Letter</p>
+			<br>
+		</div>
 </body>
